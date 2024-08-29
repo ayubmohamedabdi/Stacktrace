@@ -46,7 +46,7 @@ The stack trace report highlights the method calls and line numbers where the er
 
 ### Fixing the Issue
 
-To resolve the `NullPointerException`, we need to ensure that the object is properly initialized before calling any methods on it. Here’s the corrected code:
+To resolve the `NullPointerException`, we need to ensure that the object is properly initialized before calling any methods on it. 
 
 ```java
 package com.example.stacktraceloggerapp;
@@ -67,3 +67,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+```
+the app will now work
+![StackTrace2](images/Stacktrac3.png)
