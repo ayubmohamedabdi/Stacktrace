@@ -9,10 +9,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-        String str = null;
-        str.length(); // This will give us a NullPointerException
-
+        // Initialize the string to avoid NullPointerException
+        String str = "Hello, World!";
+        str.length(); // Now this won't cause a NullPointerException
 
         setContentView(R.layout.activity_main);
     }
