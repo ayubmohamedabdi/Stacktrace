@@ -22,17 +22,31 @@ In this example, we will address an issue with a simple Android application. The
 
 ### Problem Description
 
-This app had a problem where a `NullPointerException` was triggered due to an attempt to call a method on a null object. This caused the app to crash, as shown in the images below.
+This app had a problem where a `NullPointerException` was triggered due to an attempt to call a method on a null object. This caused the app to crash.
 
 #### Stack Trace Before Fix
 
+The application crashed due to a `NullPointerException`. The image below shows the app crashing when it tries to execute code with a null object.
+
 ![StackTrace1](images/Stacktrac1.png)
 
-*Image showing the stack trace report before fixing the issue.*
+*Image showing the application crashing due to a null pointer exception.*
+
+### Using Stack Trace to Debug
+
+By examining the stack trace report, we can identify where the problem occurred. The stack trace provides a detailed sequence of method calls that led to the error, which helps us pinpoint the exact location in the code that needs to be fixed.
+
+#### Stack Trace Report
+
+The stack trace report highlights the method calls and line numbers where the error occurred. This information is crucial for understanding why the error happened and how to address it.
+
+![StackTrace2](images/Stacktrac2.png)
+
+*Image showing the stack trace report with details about the error.*
 
 ### Fixing the Issue
 
-To resolve the `NullPointerException`, we need to ensure that the object is properly initialized before calling any methods on it. Here's the corrected code:
+To resolve the `NullPointerException`, we need to ensure that the object is properly initialized before calling any methods on it. Here’s the corrected code:
 
 ```java
 package com.example.stacktraceloggerapp;
