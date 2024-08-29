@@ -69,4 +69,4 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 the app will now work
-![StackTrace2](images/Stacktrac2.png)
+![StackTrace3](images/Stacktac3.png)
